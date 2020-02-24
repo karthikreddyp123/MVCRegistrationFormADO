@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Home</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            @Html.ActionLink("Connected Select", "Index", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Disconnected Select", "Get", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Disconnected Insert", "Create", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Connected Insert", "ConnectedCreate", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+</table>
+
